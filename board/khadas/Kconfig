@@ -14,6 +14,8 @@ config KHADAS_VIM3L
 	bool "Support Khadas VIM3L board"
 	default n
 
+config KHADAS_RIFTONE
+	bool "Support riftone board"
 
 if KHADAS_VIM
 source "board/khadas/kvim/Kconfig"
@@ -29,4 +31,9 @@ endif
 
 if KHADAS_VIM3L
 source "board/khadas/kvim3l/Kconfig"
+endif
+
+
+if KHADAS_RIFTONE
+source "board/khadas/riftone/Kconfig"
 endif
